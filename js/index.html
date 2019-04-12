@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>网易云音乐</title>
+    <link rel="stylesheet" href="../lib/bootstrap/bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/index.css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.icon"/>
+</head>
+<body>
+    <!--头部-->
+    <header class="header">
+            <!--上面那个导航栏-->
+            <section class="header-t">
+                <section class="header-t-left">
+                    <div class="logo" id="logo"><h1><a href=""></a></h1></div>
+                    <div class="header-t-ul" id="header_t_ul"><ul>
+                        <li><a href=""><em>发现音乐</em></a></li>
+                        <li><a href=""><em>我的音乐</em></a></li>
+                        <li><a href=""><em>朋友</em></a></li>
+                        <li><a href=""><em>商城</em></a></li>
+                        <li><a href=""><em>音乐人</em></a></li>
+                        <li><a href=""><em>下载客户端</em><sup class="hot"></sup></a></li>
+                    </ul></div>
+                </section>
+                <section class="header-t-right">
+                    <div  class="header-t-search" id="header_t_search">
+                        <input class="form-control" type="search" placeholder="  音乐/视频/电台/用户">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </div>
+                    <div class="header-t-tv" id="header_t_tv"><a href="">欢迎投稿</a></div>
+                    <div class="header-t-login" id="header_t_login">
+                        <a href="">登录</a>
+                        <span class="caret"></span>
+                    </div>
+                </section>
+            </section>
+            <!--下面那个导航栏-->
+            <section class="header-b">
+                <div class="header-b-in">
+                    <ul>
+                        <li><a href=""><em>推荐</em><span class="glyphicon glyphicon-triangle-top"></span></a></li>
+                        <li><a href=""><em>排行榜</em></a></li>
+                        <li><a href=""><em>歌单</em></a></li>
+                        <li><a href=""><em>主播电台</em></a></li>
+                        <li><a href=""><em>歌手</em></a></li>
+                        <li><a href=""><em>新碟上架</em></a></li>
+                    </ul>
+                </div>
+            </section>
+    </header>
+
+    <!---->
+    <nav class="nav" id="nav">
+        <div class="nav-in">
+            <!--中间轮播图-->
+            <section class="nav-content">
+
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators" id="carousel_indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="7"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" id="carousel_inner" role="listbox">
+                        <div class="item active">
+                            <img src="../images/nav1.png" alt="...">
+                        </div>
+                        <div class="item">
+                            <img src="../images/nav2.png" alt="...">
+                        </div>
+                        <div class="item">
+                            <img src="../images/nav3.png" alt="...">
+                        </div>
+                        <div class="item">
+                            <img src="../images/nav4.png" alt="...">
+                        </div>
+                        <div class="item">
+                            <img src="../images/nav5.png" alt="...">
+                        </div>
+                        <div class="item">
+                            <img src="../images/nav6.png" alt="...">
+                        </div>
+                        <div class="item">
+                            <img src="../images/nav7.png" alt="...">
+                        </div>
+                        <div class="item">
+                            <img src="../images/nav8.png" alt="...">
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left1 carousel-control" href="#carousel-example-generic" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right1 carousel-control" href="#carousel-example-generic" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+
+
+            </section>
+            <!--右边-->
+            <section class="nav-right">
+                <a href="" class="down">下载客户端</a>
+                <p>PC 安卓 iPhone WP iPad Mac 六大客户端</p>
+            </section>
+        </div>
+    </nav>
+
+    <!--主体内容-->
+    <section class="main">
+        <!--左边的内容快-->
+        <section class="main-left">
+            <div class="main-left-in">
+                <!--1热门推荐-->
+                <section class="main-1 .container-fluid">
+                    <div class="main-1wrap row">
+                        <div class="main-1wrap-1  col-md-3">
+                            <span class="glyphicon glyphicon-record"></span>
+                            <a href="">热门推荐</a>
+                        </div>
+                        <div class="main-1wrap-2  col-md-8">
+                            <ul>
+                                <li><a href="">华语</a><span class="line">|</span></li>
+                                <li><a href="">摇滚</a><span class="line">|</span></li>
+                                <li><a href="">民谣</a><span class="line">|</span></li>
+                                <li><a href="">流行</a><span class="line">|</span></li>
+                                <li><a href="">电子</a></li>
+                            </ul>
+                        </div>
+                        <div class="main-1wrap-3  col-md-1">
+                            <a href="">更多</a>
+                            <span class="glyphicon glyphicon-arrow-right"></span>
+                        </div>
+                    </div>
+                    <div class="main-1con">
+                        <ul>
+                            <li>
+                                <div class="li-div">
+                                    <a href="">
+                                        <img src="../images/0000.jpg" alt="当我和世界初相见，当我曾经是少年" title="当我和世界初相见，当我曾经是少年"/>
+                                    </a>
+                                    <div class="li-div-bottom">
+                                        <span class="glyphicon glyphicon-headphones"></span>
+                                        <span>318万</span>
+                                        <a href="" class="glyphicon glyphicon-play-circle"></a>
+                                    </div>
+                                </div>
+                                <p><a href="">当我和世界初相见，当我曾经是少年</a></p>
+                            </li>
+                            <li>
+                                <div class="li-div">
+                                    <a href="">
+                                        <img src="../images/0000.jpg" alt="当我和世界初相见，当我曾经是少年" title="当我和世界初相见，当我曾经是少年"/>
+                                    </a>
+                                    <div class="li-div-bottom">
+                                        <span class="glyphicon glyphicon-headphones"></span>
+                                        <span>318万</span>
+                                        <a href="" class="glyphicon glyphicon-play-circle"></a>
+                                    </div>
+                                </div>
+                                <p><a href="">当我和世界初相见，当我曾经是少年</a></p>
+                            </li>
+                            <li>
+                                <div class="li-div">
+                                    <a href="">
+                                        <img src="../images/0000.jpg" alt="当我和世界初相见，当我曾经是少年" title="当我和世界初相见，当我曾经是少年"/>
+                                    </a>
+                                    <div class="li-div-bottom">
+                                        <span class="glyphicon glyphicon-headphones"></span>
+                                        <span>318万</span>
+                                        <a href="" class="glyphicon glyphicon-play-circle"></a>
+                                    </div>
+                                </div>
+                                <p><a href="">当我和世界初相见，当我曾经是少年</a></p>
+                            </li>
+                            <li>
+                                <div class="li-div">
+                                    <a href="">
+                                        <img src="../images/0000.jpg" alt="当我和世界初相见，当我曾经是少年" title="当我和世界初相见，当我曾经是少年"/>
+                                    </a>
+                                    <div class="li-div-bottom">
+                                        <span class="glyphicon glyphicon-headphones"></span>
+                                        <span>318万</span>
+                                        <a href="" class="glyphicon glyphicon-play-circle"></a>
+                                    </div>
+                                </div>
+                                <p><a href="">当我和世界初相见，当我曾经是少年</a></p>
+                            </li>
+                            <li>
+                                <div class="li-div">
+                                    <a href="">
+                                        <img src="../images/0000.jpg" alt="当我和世界初相见，当我曾经是少年" title="当我和世界初相见，当我曾经是少年"/>
+                                    </a>
+                                    <div class="li-div-bottom">
+                                        <span class="glyphicon glyphicon-headphones"></span>
+                                        <span>318万</span>
+                                        <a href="" class="glyphicon glyphicon-play-circle"></a>
+                                    </div>
+                                </div>
+                                <p><a href="">当我和世界初相见，当我曾经是少年</a></p>
+                            </li>
+                            <li>
+                                <div class="li-div">
+                                    <a href="">
+                                        <img src="../images/0000.jpg" alt="当我和世界初相见，当我曾经是少年" title="当我和世界初相见，当我曾经是少年"/>
+                                    </a>
+                                    <div class="li-div-bottom">
+                                        <span class="glyphicon glyphicon-headphones"></span>
+                                        <span>318万</span>
+                                        <a href="" class="glyphicon glyphicon-play-circle"></a>
+                                    </div>
+                                </div>
+                                <p><a href="">当我和世界初相见，当我曾经是少年</a></p>
+                            </li>
+                            <li>
+                                <div class="li-div">
+                                    <a href="">
+                                        <img src="../images/0000.jpg" alt="当我和世界初相见，当我曾经是少年" title="当我和世界初相见，当我曾经是少年"/>
+                                    </a>
+                                    <div class="li-div-bottom">
+                                        <span class="glyphicon glyphicon-headphones"></span>
+                                        <span>318万</span>
+                                        <a href="" class="glyphicon glyphicon-play-circle"></a>
+                                    </div>
+                                </div>
+                                <p><a href="">当我和世界初相见，当我曾经是少年</a></p>
+                            </li>
+                            <li>
+                                <div class="li-div">
+                                    <a href="">
+                                        <img src="../images/0000.jpg" alt="当我和世界初相见，当我曾经是少年" title="当我和世界初相见，当我曾经是少年"/>
+                                    </a>
+                                    <div class="li-div-bottom">
+                                        <span class="glyphicon glyphicon-headphones"></span>
+                                        <span>318万</span>
+                                        <a href="" class="glyphicon glyphicon-play-circle"></a>
+                                    </div>
+                                </div>
+                                <p><a href="">当我和世界初相见，当我曾经是少年</a></p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <div class="ad">
+                    <a href="">
+                        <img src="../images/ad.bid.material_7fb4265357324b5d8c3801ce6ac21859.png" alt="" title="当我和世界初相见，当我曾经是少年"/>
+                    </a>
+                    <span>广告</span>
+                </div>
+                <!--2新碟上架-->
+                <section class="main-2 .container-fluid">
+                    <div class="main-2wrap row">
+                        <div class="main-2wrap-1  col-md-3">
+                            <span class="glyphicon glyphicon-record"></span>
+                            <a href="">新碟上架</a>
+                        </div>
+                        <div class="main-1wrap-2  col-md-8">
+                        </div>
+                        <div class="main-2wrap-3  col-md-1">
+                            <a href="">更多</a>
+                            <span class="glyphicon glyphicon-arrow-right"></span>
+                        </div>
+                    </div>
+                    <div class="main-2con" >
+                    <div class="cd-wrap" id="cd-wrap">
+                       <ul id="cd3">
+                        <li>
+                            <div class="main-2con-a">
+                                <a href="">
+                                    <img src="../images/109951163456268389.jpg" alt=""/>
+                                </a>
+                                <span class="glyphicon glyphicon-play-circle"><a href=""></a></span>
+                            </div>
+                            <p class="main-2con-p1">
+                                <a title="Queen" href="">Queen</a>
+                            </p>
+                            <p class="main-2con-p2">
+                                <a href="">Nicki Minaj</a>
+                            </p>
+                        </li>
+                        <li>
+                            <div class="main-2con-a">
+                                <a href="">
+                                    <img src="../images/109951163452419421.jpg" alt=""/>
+                                </a>
+                                <span class="glyphicon glyphicon-play-circle"><a href=""></a></span>
+                            </div>
+                            <p class="main-2con-p1">
+                                <a title="Queen" href="">Queen</a>
+                            </p>
+                            <p class="main-2con-p2">
+                                <a href="">Nicki Minaj</a>
+                            </p>
+                        </li>
+                        <li>
+                            <div class="main-2con-a">
+                                <a href="">
+                                    <img src="../images/109951163452419421.jpg" alt=""/>
+                                </a>
+                                <span class="glyphicon glyphicon-play-circle"><a href=""></a></span>
+                            </div>
+                            <p class="main-2con-p1">
+                                <a title="Queen" href="">Queen</a>
+                            </p>
+                            <p class="main-2con-p2">
+                                <a href="">Nicki Minaj</a>
+                            </p>
+                        </li>
+                        <li>
+                            <div class="main-2con-a">
+                                <a href="">
+                                    <img src="../images/109951163456268389.jpg" alt=""/>
+                                </a>
+                                <span class="glyphicon glyphicon-play-circle"><a href=""></a></span>
+                            </div>
+                            <p class="main-2con-p1">
+                                <a title="Queen" href="">Queen</a>
+                            </p>
+                            <p class="main-2con-p2">
+                                <a href="">Nicki Minaj</a>
+                            </p>
+                        </li>
+                        <li>
+                            <div class="main-2con-a">
+                                <a href="">
+                                    <img src="../images/109951163456268389.jpg" alt=""/>
+                                </a>
+                                <span class="glyphicon glyphicon-play-circle"><a href=""></a></span>
+                            </div>
+                            <p class="main-2con-p1">
+                                <a title="Queen" href="">Queen</a>
+                            </p>
+                            <p class="main-2con-p2">
+                                <a href="">Nicki Minaj</a>
+                            </p>
+                        </li>
+                    </ul>
+                       <ul id="cd1">
+                            <li>
+                                <div class="main-2con-a">
+                                    <a href="">
+                                        <img src="../images/109951163452419421.jpg" alt=""/>
+                                    </a>
+                                    <span class="glyphicon glyphicon-play-circle"><a href=""></a></span>
+                                </div>
+                                <p class="main-2con-p1">
+                                    <a title="Queen" href="">Queen</a>
+                                </p>
+                                <p class="main-2con-p2">
+                                    <a href="">Nicki Minaj</a>
+                                </p>
+                            </li>
+                            <li>
+                                <div class="main-2con-a">
+                                    <a href="">
+                                        <img src="../images/109951163452419421.jpg" alt=""/>
+                                    </a>
+                                    <span class="glyphicon glyphicon-play-circle"><a href=""></a></span>
+                                </div>
+                                <p class="main-2con-p1">
+                                    <a title="Queen" href="">Queen</a>
+                                </p>
+                                <p class="main-2con-p2">
+                                    <a href="">Nicki Minaj</a>
+                                </p>
+                            </li>
+                            <li>
+                                <div class="main-2con-a">
+                                    <a href="">
+                                        <img src="../images/109951163452419421.jpg" alt=""/>
+                                    </a>
+                                    <span class="glyphicon glyphicon-play-circle"><a href=""></a></span>
+                                </div>
+                                <p class="main-2con-p1">
+                                    <a title="Queen" href="">Queen</a>
+                                </p>
+                                <p class="main-2con-p2">
+                                    <a href="">Nicki Minaj</a>
+                                </p>
+                            </li>
+                            <li>
+                                <div class="main-2con-a">
+                                    <a href="">
+                                        <img src="../images/109951163452419421.jpg" alt=""/>
+                                    </a>
+                                    <span class="glyphicon glyphicon-play-circle"><a href=""></a></span>
+                                </div>
+                                <p class="main-2con-p1">
+                                    <a title="Queen" href="">Queen</a>
+                                </p>
+                                <p class="main-2con-p2">
+                                    <a href="">Nicki Minaj</a>
+                                </p>
+                            </li>
+                            <li>
+                                <div class="main-2con-a">
+                                    <a href="">
+                                        <img src="../images/109951163452419421.jpg" alt=""/>
+                                    </a>
+                                    <span class="glyphicon glyphicon-play-circle"><a href=""></a></span>
+                                </div>
+                                <p class="main-2con-p1">
+                                    <a title="Queen" href="">Queen</a>
+                                </p>
+                                <p class="main-2con-p2">
+                                    <a href="">Nicki Minaj</a>
+                                </p>
+                            </li>
+                        </ul>
+                       <ul id="cd2">
+                            <li>
+                                <div class="main-2con-a">
+                                    <a href="">
+                                        <img src="../images/109951163456268389.jpg" alt=""/>
+                                    </a>
+                                    <span class="glyphicon glyphicon-play-circle"><a href=""></a></span>
+                                </div>
+                                <p class="main-2con-p1">
+                                    <a title="Queen" href="">Queen</a>
+                                </p>
+                                <p class="main-2con-p2">
+                                    <a href="">Nicki Minaj</a>
+                                </p>
+                            </li>
+                            <li>
+                                <div class="main-2con-a">
+                                    <a href="">
+                                        <img src="../images/109951163452419421.jpg" alt=""/>
+                                    </a>
+                                    <span class="glyphicon glyphicon-play-circle"><a href=""></a></span>
+                                </div>
+                                <p class="main-2con-p1">
+                                    <a title="Queen" href="">Queen</a>
+                                </p>
+                                <p class="main-2con-p2">
+                                    <a href="">Nicki Minaj</a>
+                                </p>
+                            </li>
+                            <li>
+                                <div class="main-2con-a">
+                                    <a href="">
+                                        <img src="../images/109951163452419421.jpg" alt=""/>
+                                    </a>
+                                    <span class="glyphicon glyphicon-play-circle"><a href=""></a></span>
+                                </div>
+                                <p class="main-2con-p1">
+                                    <a title="Queen" href="">Queen</a>
+                                </p>
+                                <p class="main-2con-p2">
+                                    <a href="">Nicki Minaj</a>
+                                </p>
+                            </li>
+                            <li>
+                                <div class="main-2con-a">
+                                    <a href="">
+                                        <img src="../images/109951163456268389.jpg" alt=""/>
+                                    </a>
+                                    <span class="glyphicon glyphicon-play-circle"><a href=""></a></span>
+                                </div>
+                                <p class="main-2con-p1">
+                                    <a title="Queen" href="">Queen</a>
+                                </p>
+                                <p class="main-2con-p2">
+                                    <a href="">Nicki Minaj</a>
+                                </p>
+                            </li>
+                            <li>
+                                <div class="main-2con-a">
+                                    <a href="">
+                                        <img src="../images/109951163456268389.jpg" alt=""/>
+                                    </a>
+                                    <span class="glyphicon glyphicon-play-circle"><a href=""></a></span>
+                                </div>
+                                <p class="main-2con-p1">
+                                    <a title="Queen" href="">Queen</a>
+                                </p>
+                                <p class="main-2con-p2">
+                                    <a href="">Nicki Minaj</a>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                        <a href="" class="glyphicon glyphicon-menu-left" id="cd-previous"></a>
+                        <a href="" class="glyphicon glyphicon-menu-right" id="cd-next"></a>
+                    </div>
+                </section>
+                <!--3榜单-->
+                <section class="main-3">
+                    <div class="main-3wrap row">
+                        <div class="main-3wrap-1  col-md-3">
+                            <span class="glyphicon glyphicon-record"></span>
+                            <a href="">榜单</a>
+                        </div>
+                        <div class="main-3wrap-2  col-md-8">
+                        </div>
+                        <div class="main-3wrap-3  col-md-1">
+                            <a href="">更多</a>
+                            <span class="glyphicon glyphicon-arrow-right"></span>
+                        </div>
+                    </div>
+                    <div class="main-3con" row>
+
+                        <ul class="main-3con-ul col-md-4">
+                            <li>
+                                <div class="tleft">
+                                    <a href="" class="" title="云音乐飙升榜">
+                                        <img src="../images/bsb.jpg.png" alt=""/>
+                                    </a>
+                                </div>
+                                <div class="tright">
+                                    <a href="">
+                                        <span>云音乐飙升榜</span>
+                                    </a>
+                                    <a href="">
+                                        <span class="glyphicon glyphicon-play-circle" title="播放"></span>
+                                        <span class="glyphicon glyphicon-heart" title="喜欢"></span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="" color="red">1</span>
+                                <a href="" class="" title="可一可再">可一可再</a>
+                            </li>
+                            <li>
+                                <span class="">2</span>
+                                <a href="" class="" title="说书人">说书人</a>
+                            </li>
+                            <li>
+                                <span class="">3</span>
+                                <a href="" class="" title="春风十里 (Live)">春风十里 (Live)</a>
+                            </li>
+                            <li>
+                                <span class="">4</span>
+                                <a href="" class="" title="双影">双影</a>
+                            </li>
+                            <li>
+                                <span class="">5</span>
+                                <a href="" class="" title="空帆船">空帆船</a>
+                            </li>
+                            <li>
+                                <span class="">6</span>
+                                <a href="" class="" title="星火">星火</a>
+                            </li>
+                            <li>
+                                <span class="">7</span>
+                                <a href="" class="" title="瓜很甜">瓜很甜</a>
+                            </li>
+                            <li>
+                                <span class="">8</span>
+                                <a href="" class="" title="盗将行">盗将行</a>
+                            </li>
+                            <li>
+                                <span class="">9</span>
+                                <a href="" class="" title="晓梦">晓梦</a>
+                            </li>
+                            <li>
+                                <span class="">10</span>
+                                <a href="" class="" title="去年夏天">去年夏天</a>
+                            </li>
+                            <li class="more">查看全部></li>
+                        </ul>
+                        <ul class="main-3con-ul col-md-4">
+                            <li class="top">
+                                <div class="tleft">
+                                    <a href="" class="" title="云音乐新歌榜">
+                                        <img src="../images/xgb.png" alt=""/>
+                                    </a>
+                                </div>
+                                <div class="tright">
+                                    <a href="">
+                                        <span>云音乐新歌榜</span>
+                                    </a>
+                                    <a href="">
+                                        <span class="glyphicon glyphicon-play-circle"></span>
+                                        <span class="glyphicon glyphicon-heart"></span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="">1</span>
+                                <a href="" class="" title="可一可再">可一可再</a>
+                            </li>
+                            <li>
+                                <span class="">2</span>
+                                <a href="" class="" title="说书人">说书人</a>
+                            </li>
+                            <li>
+                                <span class="">3</span>
+                                <a href="" class="" title="春风十里 (Live)">春风十里 (Live)</a>
+                            </li>
+                            <li>
+                                <span class="">4</span>
+                                <a href="" class="" title="双影">双影</a>
+                            </li>
+                            <li>
+                                <span class="">5</span>
+                                <a href="" class="" title="空帆船">空帆船</a>
+                            </li>
+                            <li>
+                                <span class="">6</span>
+                                <a href="" class="" title="星火">星火</a>
+                            </li>
+                            <li>
+                                <span class="">7</span>
+                                <a href="" class="" title="瓜很甜">瓜很甜</a>
+                            </li>
+                            <li>
+                                <span class="">8</span>
+                                <a href="" class="" title="盗将行">盗将行</a>
+                            </li>
+                            <li>
+                                <span class="">9</span>
+                                <a href="" class="" title="晓梦">晓梦</a>
+                            </li>
+                            <li>
+                                <span class="">10</span>
+                                <a href="" class="" title="去年夏天">去年夏天</a>
+                            </li>
+                            <li class="more">查看全部></li>
+                        </ul>
+                        <ul class="main-3con-ul col-md-4">
+                            <li class="top">
+                                <div class="tleft">
+                                    <a href="" class="" title="云音乐飙升榜">
+                                        <img src="../images/bsb.jpg.png" alt=""/>
+                                    </a>
+                                </div>
+                                <div class="tright">
+                                <a href="">
+                                        <span>云音乐飙升榜</span>
+                                    </a>
+                                    <a href="">
+                                        <span class="glyphicon glyphicon-play-circle"></span>
+                                        <span class="glyphicon glyphicon-heart"></span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="">1</span>
+                                <a href="" class="" title="可一可再">可一可再</a>
+                            </li>
+                            <li>
+                                <span class="">2</span>
+                                <a href="" class="" title="说书人">说书人</a>
+                            </li>
+                            <li>
+                                <span class="">3</span>
+                                <a href="" class="" title="春风十里 (Live)">春风十里 (Live)</a>
+                            </li>
+                            <li>
+                                <span class="">4</span>
+                                <a href="" class="" title="双影">双影</a>
+                            </li>
+                            <li>
+                                <span class="">5</span>
+                                <a href="" class="" title="空帆船">空帆船</a>
+                            </li>
+                            <li>
+                                <span class="">6</span>
+                                <a href="" class="" title="星火">星火</a>
+                            </li>
+                            <li>
+                                <span class="">7</span>
+                                <a href="" class="" title="瓜很甜">瓜很甜</a>
+                            </li>
+                            <li>
+                                <span class="">8</span>
+                                <a href="" class="" title="盗将行">盗将行</a>
+                            </li>
+                            <li>
+                                <span class="">9</span>
+                                <a href="" class="" title="晓梦">晓梦</a>
+                            </li>
+                            <li>
+                                <span class="">10</span>
+                                <a href="" class="" title="去年夏天">去年夏天</a>
+                            </li>
+                            <li class="more">查看全部></li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <!--右边的内容-->
+        <aside class="main-right">
+            <section class="aside-1">
+                <p>登录网易云音乐，可以享受无限收藏的乐趣，并且无限同步到手机</p>
+                <a class="btn btn-danger" href="#" id="login">用户登录</a>
+            </section>
+            <section class="aside-2">
+                <h5 class="">
+                    <span class="f-fl">入驻歌手</span>
+                    <a href="" class="more-f">查看全部 &gt;</a>
+                </h5>
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object" src="../images/zhm.jpg" alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">张惠妹aMEI</h4>
+                        <p class="f-thide">台湾歌手张惠妹</p>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object" src="../images/zhm.jpg" alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">张惠妹aMEI</h4>
+                        <p class="f-thide">台湾歌手张惠妹</p>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object" src="../images/zhm.jpg" alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">张惠妹aMEI</h4>
+                        <p class="f-thide">台湾歌手张惠妹</p>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object" src="../images/zhm.jpg" alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">张惠妹aMEI</h4>
+                        <p class="f-thide">台湾歌手张惠妹</p>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object" src="../images/zhm.jpg" alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">张惠妹aMEI</h4>
+                        <p class="f-thide">台湾歌手张惠妹</p>
+                    </div>
+                </div>
+                <a class="btn btn-default shenqin" href="#">申请成为网易音乐人</a>
+            </section>
+            <section class="aside-3">
+                <h5 class="">
+                    <span class="f-fl">热门主播</span>
+                </h5>
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object" src="../images/cl.jpg" alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">陈立</h4>
+                        <span class="glyphicon glyphicon-education"></span>
+                        <p class="f-thide s-fc3">心理学家、美食家陈立教授</p>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object" src="../images/cl.jpg" alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">陈立</h4>
+                        <span class="glyphicon glyphicon-education"></span>
+                        <p class="f-thide s-fc3">心理学家、美食家陈立教授</p>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object" src="../images/cl.jpg" alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">陈立</h4>
+                        <span class="glyphicon glyphicon-education"></span>
+                        <p class="f-thide s-fc3">心理学家、美食家陈立教授</p>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object" src="../images/cl.jpg" alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">陈立</h4>
+                        <span class="glyphicon glyphicon-education"></span>
+                        <p class="f-thide s-fc3">心理学家、美食家陈立教授</p>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object" src="../images/cl.jpg" alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">陈立</h4>
+                        <span class="glyphicon glyphicon-education"></span>
+                        <p class="f-thide s-fc3">心理学家、美食家陈立教授</p>
+                    </div>
+                </div>
+            </section>
+        </aside>
+    </section>
+
+    <!--尾部-->
+    <footer class="footer">
+        <div class="footer-in">
+            <section class="footer-l">
+                <div class="footer-l-1">
+                    <ul>
+                        <li><a href="">关于网易</a><span class="line">|</span></li>
+                        <li><a href="">客户服务</a><span class="line">|</span></li>
+                        <li><a href="">服务条款</a><span class="line">|</span></li>
+                        <li><a href="">网站导航</a><span class="line">|</span></li>
+                        <li><a href="">意见反馈</a></li>
+                    </ul>
+                </div>
+                <p class="footer-l-2">
+                    <span class="">网易公司版权所有©1997-2018</span>
+                    <span class="">杭州乐读科技有限公司运营：</span>
+                    <a href=""class="alink ">浙网文[2018]3506-263号</a>
+                </p>
+                <p class="footer-l-3">
+                    <span>违法和不良信息举报电话：0571-89853516</span>
+                    <span>举报邮箱：</span><a class="" href="">cloudmusicservice@163.com</a>
+                </p>
+            </section>
+            <section class="footer-r">
+                <ul>
+                    <li>
+                        <a href=""></a>
+                        <span>音乐独立人</span>
+                    </li>
+                    <li>
+                        <a href=""></a>
+                        <span>音乐专栏</span>
+                    </li>
+                    <li>
+                        <a href=""></a>
+                        <span>自媒体</span>
+                    </li>
+                    <li>
+                        <a href=""></a>
+                        <span>赞赏</span>
+                    </li>
+                    <li>
+                        <a href=""></a>
+                        <span>视频奖励</span>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </footer>
+    <a title="回到顶部" class="m-back" href="#" id="gobacktop" hidefocus="true">回到顶部</a>
+
+<script src="../lib/jquery/jquery-1.12.4.js"></script>
+<script src="../lib/bootstrap/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
